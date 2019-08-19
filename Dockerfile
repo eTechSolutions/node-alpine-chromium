@@ -1,4 +1,4 @@
-FROM node:8.11-alpine
+FROM node:10.16-alpine
 
 LABEL maintainer="Craig Mellon https://github.com/eTechSolutions/node-alpine-chromium"
 
@@ -6,6 +6,9 @@ LABEL maintainer="Craig Mellon https://github.com/eTechSolutions/node-alpine-chr
 RUN echo "http://dl-2.alpinelinux.org/alpine/edge/main" > /etc/apk/repositories
 RUN echo "http://dl-2.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 RUN echo "http://dl-2.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
+
+# Update apk package references
+RUN apk update
 
 # Install chromium
 RUN apk -U --no-cache \
