@@ -1,4 +1,4 @@
-FROM node:10.16-alpine
+FROM node:12.16-alpine
 
 LABEL maintainer="Craig Mellon https://github.com/eTechSolutions/node-alpine-chromium"
 
