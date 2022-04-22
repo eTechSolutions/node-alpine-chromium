@@ -1,6 +1,6 @@
-FROM node:12.16-alpine
+FROM node:14.18.3-alpine
 
-LABEL maintainer="Craig Mellon https://github.com/eTechSolutions/node-alpine-chromium"
+LABEL maintainer="CoreLogic UK https://github.com/eTechSolutions/node-alpine-chromium"
 
 RUN \
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
