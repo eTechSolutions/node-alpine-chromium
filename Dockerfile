@@ -1,4 +1,4 @@
-FROM node:18.12.1-alpine
+FROM node:20.17.0-alpine
 
 LABEL maintainer="CoreLogic UK https://github.com/eTechSolutions/node-alpine-chromium"
 
